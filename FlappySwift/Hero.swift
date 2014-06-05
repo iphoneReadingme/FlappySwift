@@ -8,7 +8,10 @@
 
 import SpriteKit
 
-class Hero: SKSpriteNode {
+class Hero: SKSpriteNode
+{
+	var demoObj: DemoTest!
+	
     init(imageNamed name: String!){
         super.init(imageNamed: name)
         
@@ -53,8 +56,11 @@ class Hero: SKSpriteNode {
     
     func flap () {
         self.physicsBody.velocity = CGVectorMake(0, 0)
-        self.physicsBody.applyImpulse(CGVectorMake(0, 7))
+		self.physicsBody.applyImpulse(CGVectorMake(0, 7))
+		
+		///< 测试代码
+		self.demoObj = DemoTest();
+		self.demoObj.testFun();
     }
-
 
 }

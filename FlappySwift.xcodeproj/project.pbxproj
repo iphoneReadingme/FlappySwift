@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA11D1119400F4D007985FF /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA11D1019400F4D007985FF /* DemoTest.swift */; };
 		EE416DC9193D30180080C753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE416DC8193D30180080C753 /* AppDelegate.swift */; };
 		EE416DCB193D30180080C753 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EE416DCA193D30180080C753 /* GameScene.sks */; };
 		EE416DCD193D30180080C753 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE416DCC193D30180080C753 /* GameScene.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5BA11D1019400F4D007985FF /* DemoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
 		EE416DC3193D30180080C753 /* FlappySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE416DC7193D30180080C753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE416DC8193D30180080C753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				EE416DCE193D30180080C753 /* GameViewController.swift */,
 				EE416DE9193D3D3D0080C753 /* Hero.swift */,
 				EE416DEB193D4CAF0080C753 /* Terrain.swift */,
+				5BA11D1019400F4D007985FF /* DemoTest.swift */,
 				EE416DD0193D30180080C753 /* Main.storyboard */,
 				EE416DD3193D30180080C753 /* Images.xcassets */,
 				EE416DC6193D30180080C753 /* Supporting Files */,
@@ -170,6 +173,7 @@
 				TargetAttributes = {
 					EE416DC2193D30180080C753 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = X3X7VZZ2J6;
 					};
 					EE416DD8193D30180080C753 = {
 						CreatedOnToolsVersion = 6.0;
@@ -225,6 +229,7 @@
 				EE416DCF193D30180080C753 /* GameViewController.swift in Sources */,
 				EE416DEC193D4CAF0080C753 /* Terrain.swift in Sources */,
 				EE416DC9193D30180080C753 /* AppDelegate.swift in Sources */,
+				5BA11D1119400F4D007985FF /* DemoTest.swift in Sources */,
 				EE416DEA193D3D3D0080C753 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +281,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang fasheng (QRZJ36RX88)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -293,9 +299,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -318,7 +325,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang fasheng (QRZJ36RX88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yang fasheng (QRZJ36RX88)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -329,8 +337,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "E18AEF7B-4F86-484E-AF5E-C294CA495C9C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -341,9 +350,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +365,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -413,6 +430,7 @@
 				EE416DE5193D30180080C753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE416DE6193D30180080C753 /* Build configuration list for PBXNativeTarget "FlappySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +439,7 @@
 				EE416DE8193D30180080C753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
