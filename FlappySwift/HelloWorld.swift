@@ -31,7 +31,7 @@ class HelloWorld
 		
 		labelNode.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(70, 60))
 //		labelNode.physicsBody.dynamic = false;
-		labelNode.physicsBody.affectedByGravity = false
+		labelNode.physicsBody.affectedByGravity = false //没有重力和影响
 		
 		return labelNode;
 	}

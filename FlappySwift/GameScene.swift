@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
 	var helloNode: HelloWorld!
+	var demoObj: DemoTest!
     var hero: Hero!
     
     
@@ -24,7 +25,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.scaleMode = SKSceneScaleMode.AspectFill
         
         self.physicsWorld.contactDelegate = self
-        self.physicsWorld.gravity = CGVectorMake(0, -3)
+        self.physicsWorld.gravity = CGVectorMake(0, -2)
         
         self.hero = Hero(imageNamed: "hero1")
         
@@ -41,10 +42,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         self.hero.flap()
+		
+		///< 测试代码
+		self.demoObj = DemoTest();
+		self.demoObj.testFun();
     }
    
     override func update(currentTime: CFTimeInterval) {
         self.hero.update()
+//		NSLog("===update===");
     }
     
     

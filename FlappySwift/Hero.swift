@@ -10,8 +10,6 @@ import SpriteKit
 
 class Hero: SKSpriteNode
 {
-	var demoObj: DemoTest!
-	
     init(imageNamed name: String!){
         super.init(imageNamed: name)
         
@@ -47,20 +45,25 @@ class Hero: SKSpriteNode
         if self.physicsBody.velocity.dy > 30.0 {
             self.zRotation = (3.14/6.0)
         } else if self.physicsBody.velocity.dy < -100.0 {
+			self.physicsBody.velocity.dy = -100
             self.zRotation = -1*(3.14/4.0)
         } else {
             self.zRotation = 0.0
         }
+		
+		var pt = self.position
+		if pt.y < 100
+		{
+			pt.y = 100
+			self.position = pt
+		}
+		NSLog("===pt=(\(pt.x), \(pt.y))==");
     }
     
     
     func flap () {
         self.physicsBody.velocity = CGVectorMake(0, 0)
-		self.physicsBody.applyImpulse(CGVectorMake(0, 7))
-		
-		///< 测试代码
-		self.demoObj = DemoTest();
-		self.demoObj.testFun();
+		self.physicsBody.applyImpulse(CGVectorMake(0, 4))
     }
 
 }
