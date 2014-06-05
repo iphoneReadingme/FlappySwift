@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B71B6EA19406F4C00F66D9F /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71B6E919406F4C00F66D9F /* HelloWorld.swift */; };
 		5BA11D1119400F4D007985FF /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA11D1019400F4D007985FF /* DemoTest.swift */; };
+		5BA11D1319404C99007985FF /* shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA11D1219404C99007985FF /* shape.swift */; };
 		EE416DC9193D30180080C753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE416DC8193D30180080C753 /* AppDelegate.swift */; };
 		EE416DCB193D30180080C753 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EE416DCA193D30180080C753 /* GameScene.sks */; };
 		EE416DCD193D30180080C753 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE416DCC193D30180080C753 /* GameScene.swift */; };
@@ -30,7 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B71B6E919406F4C00F66D9F /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		5BA11D1019400F4D007985FF /* DemoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
+		5BA11D1219404C99007985FF /* shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shape.swift; sourceTree = "<group>"; };
 		EE416DC3193D30180080C753 /* FlappySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE416DC7193D30180080C753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE416DC8193D30180080C753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				EE416DE9193D3D3D0080C753 /* Hero.swift */,
 				EE416DEB193D4CAF0080C753 /* Terrain.swift */,
 				5BA11D1019400F4D007985FF /* DemoTest.swift */,
+				5BA11D1219404C99007985FF /* shape.swift */,
+				5B71B6E919406F4C00F66D9F /* HelloWorld.swift */,
 				EE416DD0193D30180080C753 /* Main.storyboard */,
 				EE416DD3193D30180080C753 /* Images.xcassets */,
 				EE416DC6193D30180080C753 /* Supporting Files */,
@@ -226,11 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE416DCD193D30180080C753 /* GameScene.swift in Sources */,
+				5BA11D1319404C99007985FF /* shape.swift in Sources */,
 				EE416DCF193D30180080C753 /* GameViewController.swift in Sources */,
 				EE416DEC193D4CAF0080C753 /* Terrain.swift in Sources */,
 				EE416DC9193D30180080C753 /* AppDelegate.swift in Sources */,
 				5BA11D1119400F4D007985FF /* DemoTest.swift in Sources */,
 				EE416DEA193D3D3D0080C753 /* Hero.swift in Sources */,
+				5B71B6EA19406F4C00F66D9F /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

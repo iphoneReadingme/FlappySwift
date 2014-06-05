@@ -21,10 +21,19 @@ class DemoTest: UIResponder
 	
 	func testValueSet()
 	{
-		///<
+		let languageName = "Swift"
+		//languageName = "Swift++"
+		// this is a compile-time error --- languageName cannot be changed
+		let twoThousand: UInt16 = 2_000
+		let pi = 3.14159
+		let π = 3.14159
+		let 你好 = "你好世界"
+		let 🐶🐮 = "dogcow"
+		
+		///< 常理定义
 		let maximumNumberOfLoginAttempts = 10
 		
-		///< 单变量
+		///< 单变量定义
 		var fValue : Float = 4;
 		fValue = 7;
 		NSLog("fValue=%f", fValue);
@@ -106,4 +115,26 @@ class DemoTest: UIResponder
 	}
 
 }
+
+///< MARK: == 测试代码
+//#pragma mark - ==
+struct Resolution {
+	var width = 0
+	var height = 0
+}
+class VideoMode {
+	var resolution = Resolution()
+	var interlaced = false
+	var frameRate = 0.0
+	var name: String?
+	
+	func initVideoMode()
+	{
+		let resObj = Resolution();
+		var vidObj = 0;
+	}
+}
+
+
+
 

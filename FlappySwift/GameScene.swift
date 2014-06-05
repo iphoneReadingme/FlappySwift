@@ -9,7 +9,7 @@
 import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    
+	var helloNode: HelloWorld!
     var hero: Hero!
     
     
@@ -17,7 +17,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let backgroundTexture = SKTexture(imageNamed:"background")
 
         let background = SKSpriteNode(texture: backgroundTexture, size: self.frame.size)
-        background.position =  CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
+        background.position =  CGPointMake(CGRectGetMidX(self.frame)*0.5, CGRectGetMidY(self.frame)*0.5)
         
         self.addChild(background)
         
@@ -30,9 +30,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.hero.position = CGPointMake(350.0, 450.0)
         self.addChild(self.hero)
-        
+		
         Terrain().create(self)
-
+		
+		
+		self.helloNode = HelloWorld();
+		self.addChild(helloNode.newHelloLabelNode());
+		self.helloNode.update(CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)))
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -50,8 +54,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didEndContact(contact: SKPhysicsContact!)
     {
     }
-    
-
+	
 }
 
 
